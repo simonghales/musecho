@@ -1,0 +1,26 @@
+
+%input--reset {
+  background: none;
+  border: 0;
+
+  &:focus {
+    outline: none;
+  }
+
+}
+
+.input--major {
+  @extend %input--reset;
+  color: #{map_get($colours, strong)};
+  display: block;
+  font-size: 1.5em;
+  padding: 10px;
+  width: 100%;
+  font-weight: 700;
+
+  @include placeholder {
+    color: #{map_get($colours, strong)};
+    font-style: italic;
+  }
+
+}

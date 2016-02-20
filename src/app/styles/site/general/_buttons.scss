@@ -1,0 +1,80 @@
+
+%btn--reset {
+  @extend %font--heading;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  font-size: 1em;
+
+  &:focus {
+    outline: none;
+  }
+
+}
+
+.btn {
+  @extend %btn--reset;
+}
+
+.btn--major {
+  @extend %transition-default;
+
+  display: block;
+  color: #{map_get($colours, strong)};
+  //width: 100px;
+  width: 100%;
+  height: 80px;
+  font-size: 2em;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    @include transition(all, 250ms, ease);
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 4px;
+    background-color: #{map_get($colours, strong)};
+
+    transform: translateY(4px);
+
+  }
+
+  &.state--enabled {
+
+    &::before {
+      transform: translateY(0);
+    }
+
+    &:hover {
+      //@extend %shadow-red;
+      @extend %white-faint;
+    }
+
+    &:active {
+      @extend %white-faint-active;
+      transform: translateY(2px);
+    }
+
+  }
+
+  &.state--disabled {
+    cursor: default;
+    opacity: 0.25;
+  }
+
+}
+
+.btn--remove {
+  color: #{map_get($colours, highlight)};
+  font-size: .9em;
+  font-weight: 700;
+
+  &:hover {
+    color: #{map_get($colours, default)};
+  }
+
+}

@@ -1,0 +1,83 @@
+<section class="page page--intro">
+  <section class="site-intro">
+    <h1>MUS<span>ECHO</span></h1>
+    <h2>
+      Feed us <strong>three tracks</strong> from <strong>SoundCloud</strong> and
+      <br/>
+      watch us <strong>recommend</strong> you some <strong>sick beats</strong>
+    </h2>
+  </section>
+  <div class="content--centered smaller">
+    <section class="search-section">
+      <div class="search-wrapper">
+        <input
+          class="search input--major"
+          placeholder="Search for a track" type="text"/>
+        <div class="search-underline"></div>
+        <ul class="search-dropdown">
+          <li>
+            <seed class="seed--mini"></seed>
+          </li>
+          <li>
+            <seed class="seed--mini"></seed>
+          </li>
+          <li>
+            <seed class="seed--mini"></seed>
+          </li>
+          <li>
+            <seed class="seed--mini"></seed>
+          </li>
+          <li>
+            <seed class="seed--mini"></seed>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="seeds-section">
+      <!--<h3 class="title&#45;&#45;light">Selected Seeds</h3>-->
+      <ul class="seeds-list">
+        <li>
+          <div class="seed seed--interactive">
+            <div class="seed__thumb thumb--jeza"></div>
+            <div class="seed__info">
+              <div>
+                <h4 class="seed__title">Come Alive</h4>
+                <h5 class="seed__subtitle">The Jezabels</h5>
+              </div>
+              <button class="remove-button btn btn--remove">Replace</button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="seed seed--interactive">
+            <div class="seed__thumb thumb--spark"></div>
+            <div class="seed__info">
+              <div>
+                <h4 class="seed__title">Come Alive</h4>
+                <h5 class="seed__subtitle">The Jezabels</h5>
+              </div>
+              <button class="remove-button btn btn--remove">Replace</button>
+            </div>
+          </div>
+        </li>
+        <!--<li>-->
+          <!--<div-->
+            <!--ng-click="mainVM.search();"-->
+            <!--class="seed seed&#45;&#45;add seed&#45;&#45;interactive">-->
+            <!--<div class="seed__thumb"></div>-->
+            <!--<div class="seed__info">-->
+              <!--<p>Add Seed</p>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</li>-->
+        <li>
+          <button
+            ng-click="mainVM.start();"
+            class="btn btn--major state--enabled">
+            GO
+          </button>
+        </li>
+      </ul>
+    </section>
+  </div>
+</section>

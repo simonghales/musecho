@@ -1,0 +1,24 @@
+%font--heading {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @extend %font--heading;
+}
+
+body {
+  @extend %font--heading;
+  color: #{map_get($colours, default)};
+  font-size: 14px;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.title--light {
+  color: #{map_get($colours, highlight)};
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.6em;
+}

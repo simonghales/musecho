@@ -1,0 +1,17 @@
+.content--centered {
+  width: 100%;
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &.smaller {
+    max-width: 480px;
+  }
+
+}
+
+.thumb {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

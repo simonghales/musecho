@@ -1,0 +1,22 @@
+.site-intro {
+  margin: 160px 0 50px 0;
+  text-align: center;
+
+  h1 {
+    color: #{map_get($colours, highlight)};
+    font-size: 3.2em;
+    font-weight: 300;
+    margin-bottom: 10px;
+
+    span {
+      font-weight: 700;
+    }
+
+  }
+
+  h2 {
+    font-size: 1.2em;
+    line-height: 1.2em;
+  }
+
+}
